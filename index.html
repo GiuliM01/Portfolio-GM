@@ -1,136 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="icon.png">
-    <title>Giuliana Muller</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css?v=20260204"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
-<body class="your_css_selector_here ">
-    <header class='barra-inicio'>
-            <div class='header-inner'>
-                <a class="brand">Giuliana Muller</a>
-                <nav class="main-nav" aria-label="Navegación principal">
-                <ul>
-                    <li class='animacion'>
-                    <a href="#experiencia">Experiencia</a>
-                    </li>
-                    <li>
-                    <a href="#proyectos">Proyectos</a>
-                    </li>
-                    <li>
-                    <a href="#contactame">Contactame</a>
-                    </li>
-                </ul>
-                </nav>
-            </div>
-            </header>
+<body>
 
-        <section id="sobre-mi" class="primer-seccion">
-        <div class="caja-central">
+<section class="hero" id="hero">
+    <canvas id="particles-hero"></canvas>
+<div class="hero-content">
 
-            <div class="caja-cara">
-                <img class="cara fade-in" src="img/Giu2.jpeg" alt=""> 
-            </div>
+    <h1>¡Hola!, soy <span>Giuliana</span>.</h1>
+    <h2>Software Developer</h2>
 
-            <div class="caja-presentacion fade-in">
-            <h1>Sobre Mi</h1>
-            <p class="presentacion">
-                Hola, soy Giuliana, estudiante de informática y apasionada por la tecnología. 
-                Trabajé en entornos colaborativos donde desarrollé habilidades de aprendizaje autónomo, 
-                adaptación a nuevos procesos y comunicación efectiva dentro del equipo. Estoy en constante aprendizaje y 
-                busco seguir creciendo a través de proyectos reales que me permitan aplicar y mejorar mis conocimientos técnicos.
-            </p>
-            </div>
+    <a href="#proyectos" class="hero-btn">
+    Ver mi trabajo ↓
+    </a>
 
-        </div>
-        </section>
-        <section id="experiencia" class="segunda-seccion">
-            <h2>Experiencia</h2>
-            <p>
-                Me desempeñé como Analista de Datos en una empresa de tecnología, donde adquirí experiencia trabajando con grandes volúmenes 
-                de información y desarrollé habilidades clave como el trabajo en equipo, la comunicación efectiva y la adaptabilidad.
-            </p>
-            <br />
-            <p>
-                A lo largo de mi formación en desarrollo web fui fortaleciendo competencias esenciales para trabajar en entornos técnicos. 
-                Tengo una alta capacidad de aprendizaje autónomo, lo que me permite incorporar nuevas tecnologías, frameworks y herramientas con rapidez.
-            </p>
-            <h2 class="aptitudes">Conocimientos Técnicos</h2>
-            <div class="aptitudes-2">
-                <div>
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="icono-tech"
-                    width="55"/>
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="icono-tech"
-                    width="55"/>
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="icono-tech"
-                    width="55"/>
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="icono-tech"
-                    width="55"/>
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="icono-tech"
-                    width="55"/>
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="icono-tech"
-                    width="55"/>
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" class="icono-tech"
-                    width="55"/>
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="icono-tech"
-                    width="55"/>
-                <img
-                    src="https://icongr.am/devicon/amazonwebservices-original.svg?size=128&color=currentColor" class="icono-tech"
-                    width="55"/>
-                </div>
-            </div>
-            <ul>
-                <div class="cursos">
-                    <li>
-                        Bootcamp de programación web, Html, CSS, JavaScript, React, MySQL | Potrero Digital
-                    </li>
-                    <li>
+</div>
+</section>
 
-                        AWS re/Start - Soluciones en la Nube | Potrero Digital y Fundación
-                        Compromiso
-                    </li>
-                    <li>Base de Datos, Nivel Universidad | Maxi Programa</li>
-                    <li>
-                        Curso de Programación con C# Nivel 1 y 2: POO + .NET + SQL | Maxi Programa
-                    </li>
-                </div>
-            </ul>
-        </section>
+<header class="nav">
+  <div class="nav-container">
+    <a href="#hero" class="logo">Sobre mi</a>
 
-        <section id="proyectos" class="tercer-seccion">
-            <h2 class="proyectos-titulo">Mis Proyectos</h2>
-            <div class="proyectos">     
-                <div class="card proyecto">
-                    <h3>Bootcamp Potrero Digital</h3>
-                    <p>
-                        Estoy desarrollando una página web jundo a dos devs para "Generar Eco", una ONG que requiere 
-                        el rediseño completo de su página web para mejorar la experiencia del usuario y facilitar la gestión interna. 
-                    </p>
-                    <a href="https://github.com/Walt-exe/Generar-ECO" target="_blank">Ver</a>
-                </div>
-            </div>
-        </section> 
+    <nav>
+      <a href="#hero">Conocimientos</a>
+      <a href="#about">Proyectos</a>
+      <a href="#projects">Contacto</a>
+      <a href="#contact">Redes</a>
+    </nav>
+  </div>
+</header>
 
-        <footer id="contactame" class="contactame">
-            <h2>Contactame</h2>
-            <div class='contacto'>
-            <a href="https://www.linkedin.com/in/giumuller/" target="_blank">
-            <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" class="red-social icono-tech" width="40"/></a>
 
-            <a href="https://github.com/GiuliM01" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" class="red-social icono-tech" alt="" width="45"/>
-            </a>
-            </div>
-        </footer>
+<section class="about" id="about">
+  <canvas id="particles-about"></canvas>
+
+  <div class="about-container">
+    <h2 class="about-title">Sobre mi</h2>
+
+    <div class="about-icon">
+      <img src="./img/icon.png">
+    </div>
+
+    <p class="about-text">
+      Hola, mi nombre es Giuliana.
+      Soy desarrolladora web con un gran entusiasmo por la tecnología. 
+      <br>
+      <br>
+      Tuve la oportunidad de desarrollar una página web para una ONG, donde pude poner en práctica mis conocimientos y entender mejor cómo trabajar en proyectos reales.
+      <br>
+      <br>
+      Me interesa seguir creando soluciones, aprendiendo y creciendo con cada proyecto nuevo.
+    </p>
+  </div>
+</section>
+
+<section class="tech-section">
+
+  <canvas id="particles-tech"></canvas>
+
+  <h2 class="section-title">Tecnologías</h2>
+
+  <div class="tech-grid">
+
+    <div class="tech">
+      <i class="fab fa-html5"></i>
+      <span>HTML</span>
+    </div>
+
+    <div class="tech">
+      <i class="fab fa-css3-alt"></i>
+      <span>CSS</span>
+    </div>
+
+    <div class="tech">
+      <i class="fab fa-js"></i>
+      <span>JavaScript</span>
+    </div>
+
+    <div class="tech">
+      <i class="fab fa-bootstrap"></i>
+      <span>Bootstrap</span>
+    </div>
+
+    <div class="tech">
+      <i class="fab fa-react"></i>
+      <span>React</span>
+    </div>
+
+    <div class="tech">
+      <i class="fa-solid fa-code"></i>
+      <span>.NET</span>
+    </div>
+
+    <div class="tech">
+      <i class="fa-solid fa-database"></i>
+      <span>SQL</span>
+    </div>
+
+    <div class="tech">
+      <i class="fa-brands fa-aws"></i>
+      <span>AWS</span>
+    </div>
+
+    <div class="tech">
+      <i class="fab fa-github"></i>
+      <span>Git</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="projects" id="projects">
+  <div class="projects-container">
+
+    <h2 class="projects-title">Proyecto</h2>
+
+    <div class="project-card">
+
+      <div class="project-img">
+        <img src="./img/proyecto/web.png" alt="Proyecto Generar Eco">
+      </div>
+
+      <div class="project-info">
+        <h3>Generar Eco</h3>
+
+        <p>
+           El proyecto incluyó el maquetado responsive con HTML y CSS, la implementación de componentes interactivos con JavaScript y la 
+           integración de formularios con validación del lado del cliente y envío de datos a correo electrónico mediante PHPMailer.
+        </p>
+
+        <a href="https://github.com/GiuliM01/Generar-Eco" target="_blank" class="project-btn">
+          Ver proyecto →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <canvas id="particles-contact"></canvas>
+
+  <div class="contact-container">
+
+    <h2 class="contact-title">Enviame una propuesta laboral o consulta</h2>
+
+    <form class="contact-form">
+
+      <input type="text" placeholder="Your name" required>
+
+      <input type="email" placeholder="Your email" required>
+
+      <textarea placeholder="Your message" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<section class="perfil-final">
+
+<canvas id="particles-profile"></canvas>
+
+<div class="wrapper">
+
+  <h2 class="profile-title">Mis redes sociales</h2>
+
+  <div class="profile">
+    
+    <div class="overlay">
+      <h4>Giuliana Muller</h4>
+      <span>Software Developer</span>
+
+      <ul class="social-icons">
+        <li><i class="fab fa-linkedin-in"></i></li>
+        <li><i class="fab fa-github"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+
+<script>
+
+function createParticles(canvasId){
+
+  const canvas = document.getElementById(canvasId);
+  if(!canvas) return;
+
+  const ctx = canvas.getContext("2d");
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  let particles = [];
+
+  for(let i=0;i<80;i++){
+    particles.push({
+      x: Math.random()*canvas.width,
+      y: Math.random()*canvas.height,
+      size: Math.random()*2,
+      speedX: (Math.random()-0.5)*0.2,
+      speedY: (Math.random()-0.5)*0.2
+    });
+  }
+
+  function animate(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    particles.forEach(p=>{
+      p.x += p.speedX;
+      p.y += p.speedY;
+
+      if(p.x<0)p.x=canvas.width;
+      if(p.x>canvas.width)p.x=0;
+      if(p.y<0)p.y=canvas.height;
+      if(p.y>canvas.height)p.y=0;
+
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.size,0,Math.PI*2);
+      ctx.fillStyle="rgba(0,150,255,0.6)";
+      ctx.fill();
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  createParticles("particles-hero");
+  createParticles("particles-about");
+  createParticles("particles-projects");
+  createParticles("particles-contact");
+  createParticles("particles-profile");
+  createParticles("particles-tech");
+
+});
+
+</script>
+
+<script>
+const hero = document.getElementById("hero");
+
+hero.addEventListener("mousemove", e => {
+
+  const rect = hero.getBoundingClientRect();
+
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  hero.style.setProperty("--x", x + "px");
+  hero.style.setProperty("--y", y + "px");
+
+});
+
+</script>
+
 </body>
 </html>
