@@ -10,7 +10,6 @@
   overflow:hidden;
 }
 
-/* fondo tipo "tech" */
 .hero::before{
  content:"";
   position:absolute;
@@ -42,7 +41,6 @@
   z-index:2;
 }
 
-/* títulos */
 .hero h1{
   font-size:60px;
   color:white;
@@ -61,7 +59,6 @@
   margin-bottom:40px;
 }
 
-/* botón */
 .hero-btn{
   display:inline-block;
   padding:15px 30px;
@@ -76,6 +73,8 @@
   background:#ff4d5a;
   color:white;
 }
+
+
 /*ABOUT*/
 .hero, .about{
   min-height:100vh;
@@ -170,7 +169,6 @@
   overflow:hidden;
 }
 
-/* particulas */
 #particles-tech{
   position:absolute;
   top:0;
@@ -180,7 +178,6 @@
   z-index:0;
 }
 
-/* titulo */
 .section-title{
   position:relative;
   z-index:2;
@@ -198,7 +195,6 @@
   margin:12px auto 0;
 }
 
-/* grid */
 .tech-grid{
   position:relative;
   z-index:2;
@@ -209,7 +205,6 @@
   gap:30px;
 }
 
-/* cards */
 .tech{
   background:rgba(255,255,255,.03);
   border:1px solid rgba(255,255,255,.08);
@@ -236,8 +231,6 @@
   border-color: #ff4d5a;
   box-shadow: #ff4d5a;
 }
-
-
 
 /*BARRA NAV*/
 
@@ -276,7 +269,7 @@
 /*PROYECTOS*/
 
 .projects{
-  min-height:100vh;
+  min-height:auto;
   background:#0b0f19;
   padding:120px 20px;
   display:flex;
@@ -296,7 +289,6 @@
   width:100%;
 }
 
-/* título */
 .projects-title{
   color:white;
   font-size:48px;
@@ -316,7 +308,6 @@
   bottom:-12px;
 }
 
-/* card */
 .project-card{
   display:flex;
   gap:60px;
@@ -335,7 +326,7 @@
 
 .project-img{
   width:600px;
-  height:350px; /* tamaño de la "ventana" */
+  height:350px;
   overflow:auto;
   border-radius:12px;
   border:1px solid rgba(255,255,255,.08);
@@ -343,7 +334,6 @@
   box-shadow:0 20px 40px rgba(0,0,0,.4);
 }
 
-/* IMPORTANTE */
 .project-img img{
   width:auto;
   max-width:none;
@@ -361,8 +351,6 @@
 }
 
 
-
-/* info */
 .project-info{
   color:white;
 }
@@ -378,7 +366,6 @@
   margin-bottom:30px;
 }
 
-/* botón */
 .project-btn{
   border:2px solid #ff4d5a;
   padding:12px 24px;
@@ -421,7 +408,6 @@
   text-align:center;
 }
 
-/* título */
 .contact-title{
   color:white;
   font-size:48px;
@@ -484,7 +470,6 @@
   position:relative;
   overflow:hidden;
 
-  /* layout vertical */
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -493,7 +478,6 @@
   padding-top:60px;
 }
 
-/* canvas partículas */
 #particles-profile{
   position:absolute;
   top:0;
@@ -503,7 +487,6 @@
   z-index:0;
 }
 
-/* titulo */
 .profile-title{
   color:white;
   font-size:42px;
@@ -512,7 +495,6 @@
   position:relative;
 }
 
-/* linea roja */
 .profile-title::after{
   content:"";
   display:block;
@@ -523,13 +505,10 @@
   border-radius:4px;
 }
 
-
-/* contenedor imagen */
 .wrapper{
   z-index:2;
 }
 
-/* card imagen */
 .profile{
   width:300px;
   height:350px;
@@ -539,12 +518,10 @@
   position:relative;
 }
 
-/* efecto hover leve zoom */
 .profile:hover{
   transform:scale(1.03);
 }
 
-/* overlay */
 .overlay{
   position:absolute;
   inset:0;
@@ -557,12 +534,10 @@
   align-items:center;
 }
 
-/* aparece */
 .profile:hover .overlay{
   opacity:1;
 }
 
-/* nombre */
 .overlay h4{
   color:#fff;
   font-size:22px;
@@ -574,7 +549,6 @@
   font-size:14px;
 }
 
-/* iconos */
 .social-icons{
   margin-top:25px;
   display:flex;
@@ -595,8 +569,294 @@
   font-size:16px;
 }
 
+.social-icons a {
+  color: #ff4d5a;
+}
+
 .social-icons li:hover{
   background:white;
   color:black;
   transform:translateY(-3px);
 }
+
+/*   HERO */
+@media (max-width: 1024px){
+
+  .hero h1{
+    font-size:48px;
+  }
+
+  .hero h2{
+    font-size:34px;
+  }
+
+  .about-title{
+    font-size:38px;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .hero,
+  .about{
+    min-height:auto;
+    padding:90px 20px;
+  }
+
+  .hero h1{
+    font-size:36px;
+    line-height:1.2;
+  }
+
+  .hero h2{
+    font-size:24px;
+  }
+
+  .hero-btn{
+    margin-top:20px;
+    padding:12px 22px;
+  }
+
+  /* ABOUT */
+
+  .about-container{
+    max-width:520px;
+    margin:auto;
+    text-align:left;
+  }
+
+  .about-title{
+    font-size:30px;
+    text-align:center;
+    margin-bottom:20px;
+  }
+
+  .about-icon img{
+    width:80px;
+    margin:24px auto;
+    display:block;
+  }
+
+  .about-text{
+    font-size:16px;
+    line-height:1.8;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .about,
+  .tech-section{
+    padding:70px 20px;
+  }
+
+}
+
+
+/* NAV  */
+@media (max-width:768px){
+
+.nav-container{
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+  padding:14px;
+}
+
+.logo{
+  font-size:18px;
+}
+
+.nav-container nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+}
+
+.nav-container nav a{
+  margin:0;
+  font-size:14px;
+}
+
+}
+
+@media (max-width: 1024px){
+
+  .project-card{
+    gap:40px;
+    padding:30px;
+  }
+
+  .project-img{
+    width:100%;
+    max-width:500px;
+    height:300px;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .projects{
+    padding:80px 16px;
+  }
+
+  .projects-title{
+    font-size:32px;
+    margin-bottom:50px;
+  }
+
+  .project-card{
+    flex-direction:column;
+    gap:30px;
+    padding:24px;
+    text-align:center;
+  }
+
+  .project-img{
+    width:100%;
+    height:260px;
+  }
+
+  .project-info h3{
+    font-size:24px;
+  }
+
+  .project-info p{
+    font-size:15px;
+  }
+
+  .project-btn{
+    display:inline-block;
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .project-img{
+    height:220px;
+  }
+
+  .project-card{
+    padding:18px;
+  }
+
+}
+
+/*tecnologias*/
+@media (max-width: 768px){
+
+  .tech-section{
+    min-height:auto;
+    padding:60px 20px;
+  }
+
+  .section-title{
+    margin-top:0;
+  }
+
+  .section-title{
+    font-size:28px;
+    margin-bottom:30px;
+    text-align:center;
+}
+  
+
+}
+
+/*formulario de contacto*/
+
+@media (max-width: 1024px){
+
+  .contact-title{
+    font-size:38px;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .contact{
+    min-height:auto;
+    padding:70px 20px;
+    align-items:flex-start;
+  }
+
+  .contact-container{
+    text-align:left;
+  }
+
+  .contact-title{
+    font-size:28px;
+    margin-bottom:30px;
+    text-align:center;
+  }
+
+  .contact-form{
+    gap:16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+    padding:12px;
+    font-size:15px;
+  }
+
+  .contact-form button{
+    padding:12px;
+  }
+
+}
+
+/*perfil final*/
+
+@media (max-width: 1024px){
+
+  .profile{
+    background:none;
+    height:auto;
+  }
+
+}
+
+@media (max-width: 1024px){
+
+  .overlay{
+    position:static;
+    opacity:1;
+    background:none;
+    padding-top:20px;
+  }
+
+  .social-icons{
+    justify-content:center;
+  }
+
+  .profile-title{
+    font-size:28px;
+    margin-bottom:30px;
+    text-align:center;
+  }
+}
+
+@media (max-width: 768px){
+
+  /* FORM */
+  .contact{
+    min-height:auto;
+    padding:60px 20px 40px;
+  }
+
+  /* REDES */
+  .perfil-final{
+    min-height:auto;
+    padding-top:40px;
+    justify-content:flex-start;
+  }
+
+}
+
