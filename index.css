@@ -645,16 +645,6 @@
 
 }
 
-@media (max-width: 768px){
-
-  .about,
-  .tech-section{
-    padding:70px 20px;
-  }
-
-}
-
-
 /* NAV  */
 @media (max-width:768px){
 
@@ -860,3 +850,35 @@
 
 }
 
+@media (max-width: 768px){
+
+  section{
+    padding:90px 20px;
+  }
+
+  .hero{
+    padding-top:110px;
+  }
+
+  .about{
+    padding-top:90px;
+  }
+
+  .projects{
+    padding-top:90px;
+  }
+
+  .tech-section{
+    padding-top:90px;
+  }
+
+  .contact{
+    padding-top:90px;
+  }
+
+  .perfil-final{
+    padding-top:100px;
+    padding-bottom:110px;
+  }
+
+}
